@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Exp 3</title>
+    </head>
+    
+    <body>
+        Select a number: <p id='selected'></p>
+         <div id="id1">
+             <input type="text" id="num" class="ip" value="" onclick="disp_list()">
+            <div id="numlist" class='numList'></div>
+        </div>
+    </body>
+
+    <script src="/Users/test/Documents/Keerthi/Exp3b.js"></script>
+    <style>
+            .ip
+            {
+                position:relative;
+                display: inline-block;
+            }
+            .numList
+            {
+                display:none;
+                position: absolute;
+                background-color: blanchedalmond;
+                min-width: 160px;
+                height:500px;
+                overflow: scroll;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .numList div{
+                color: black;
+                padding: 12px 16px;
+                display: block;
+            }
+            .numList div:hover
+            {
+                background-color: darkgray;
+            }
+            .show 
+            {
+                display: block;
+            }
+        </style>
+</html>

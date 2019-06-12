@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>TASK 1 and 2</title>
+        <style type="text/css">
+          *{  
+              box-sizing:border-box;
+           }
+            #main{
+                margin: 50px;
+            }     
+            .Option_tab {
+                float: left;
+                border: 1px solid rgb(14, 1, 1);
+                background-color:dimgray;
+                width: 30%;
+                height: 100%;
+            }
+            .Option_tab button {
+                display: block;
+                background-color: silver;
+                padding: 22px 16px;
+                color:black;
+                width: 100%;
+                border: 1 px snow;
+                text-align: center;
+                font-size: 17px;
+            }
+
+            .Option_tab button:hover {
+                background-color: #ddd;
+            }
+
+            .tab_data {
+                float: left;
+                padding: 0px 12px;
+                border: 1px solid #ccc;
+                width: 70%;
+                border-left: none;
+                height: 100%;
+            }
+            #frame
+            {
+                background-color: lightsteelblue;
+            }
+        </style>
+    </head>
+
+    <body onload="init()"> 
+
+        <header><h2>Tasks 1 and 2 combined</h2></header>
+
+        <div id="main">
+            <div class="Option_tab">
+                <button class="exp" onclick="load(0)" id="defaultOpen">TASK 1</button>
+                <button class="exp" onclick="load(1)">TASK 2</button>
+            </div>
+
+            <div class="tab_data">
+                <iframe src="/Users/test/Documents/Keerthi/Ex1.html" width="100%" height="100%" id="frame"></iframe>
+            </div>
+
+            <div class="tab_data">
+                <iframe src="/Users/test/Documents/Keerthi/Ex2.html" width="100%" height="100%" id="frame"></iframe>
+            </div>
+        </div>
+
+    </body>   
+    <script src="/Users/test/Documents/Keerthi/Exp1_2.js"></script>
+</html>

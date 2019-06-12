@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>EXP2</title>
+        <style>
+            .bold
+            {
+                font-weight: bold;
+            }
+            .italics
+            {
+                font-style:italic;
+            }
+            #sub
+            {
+                height: 50px;
+                width:200px;
+            }
+            .both
+            {
+                text-decoration: underline line-through;
+            }
+            .strike
+            {
+                text-decoration: line-through;
+            }
+            .under
+            {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body onload="init()">
+        <div id="div1" style="display: flex; margin: 150px 150px">
+            <input type="text" id="userip" style="margin-right: 100px">
+            <p id="content" class="content" value="Zoho Corp" style="margin-right: 100px; text-align:center; font-size: 50px">ZOHO Corp</p>
+            <div id="textbox" style="margin-right: 100px">
+                Pressed Keys:<br>
+            </div>
+            <div>
+                DEFAULT KEYS AND FUNCTIONS:<br>
+                <ul>
+                    <li>
+                        ctrl+B : <b>BOLD</b>
+                    </li>
+                    <li>ctrl+I : <i>ITALIC</i></li>
+                    <li>ctrl+S : <s>STRIKETHROUGH</s></li>
+                    <li>ctrl+U : <u>UNDERLINE</u></li>
+                </ul>
+            </div>
+        </div>
+        <div id="div2" style="display: flex; margin: 150px 150px">
+            Select your choice of Shortcuts for :  
+            <select id="op">
+                <option value='b'>BOLD</option>
+                <option value='i'>ITALIC</option>
+                <option value='s'>STRIKETHROUGH</option>
+                <option value='u'>UNDERLINE</option>
+            </select>
+            <div style="margin-left:200px">
+                Preferred character : <input type="text" id="sh">
+            </div>
+            <button id="sub" onclick="updated()" >Update</button>    
+        </div>
+    </body>
+    <script src="/Users/test/Documents/Keerthi/Exp2.js">
+    </script>
+</html>
