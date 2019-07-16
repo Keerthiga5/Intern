@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<servlet-name>UploadData</servlet-name>
+		<servlet-class>UploadImg</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>viewAll</servlet-name>
+		<servlet-class>SelectAll</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadData</servlet-name>
+		<url-pattern>/addData</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>viewAll</servlet-name>
+		<url-pattern>/viewTags</url-pattern>
+	</servlet-mapping>
+	<context-param>
+		<description>Location to store uploaded file</description> 
+      	<param-name>file-upload</param-name> 
+     	<param-value>
+        	/Users/test/Documents/Apache/apache-tomcat-7.0.94/webapps/TipsTab/pics 
+      	</param-value> 
+	</context-param>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
