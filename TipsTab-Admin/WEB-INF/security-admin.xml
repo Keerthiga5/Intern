@@ -1,0 +1,7 @@
+<url path="(/sheet|)/admin/TipsTab.do" authorization="false" operation-type="read" method="post" csrf="true">
+			<param name="action" regex="add|view"/>
+			<param name="header" type="String" max-len="10000"/>
+			<param name="msg" type="String" max-len="10000"/>
+			<param name="link" regex="url" max-len="10000"/>
+			<param name="file" regex="url" max-len="10000"/>
+</url>
